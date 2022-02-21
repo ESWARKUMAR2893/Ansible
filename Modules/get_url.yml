@@ -1,0 +1,11 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: get txt file
+      get_url:
+            url: "https://raw.githubusercontent.com/ESWARKUMAR2893/docker/main/docker_commands?token=GHSAT0AAAAAABRJ56CNUWJNIFCDEQFEHVIUYQTV2KA"
+            dest: "/opt/eswar"
+
+# Downloads files from HTTP, HTTPS, or FTP to node
+# ansible-playbook -i hostfile get_url.yml --syntax-check
+# ansible-playbook -i hostfile get_url.yml 
