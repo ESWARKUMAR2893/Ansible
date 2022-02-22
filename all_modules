@@ -1,7 +1,7 @@
-file
+file : path , dest , state (touch , directory ,absent) , mode 
 set_facts
-copy
-synchronize
+copy: src , dest 
+synchronize : src , dest  
 assert
 import_tasks
 import_role
@@ -12,17 +12,18 @@ include_vars
 pause
 fail
 debug
-get_url
-replace
-find
-register
-yum
-zypper
-lineinfile
-command
-script
-shell
-template
-win_command
-win_copy
-win_file
+get_url : url , dest 
+replace : 
+find :
+register :
+yum :
+zypper :
+lineinfile : 
+blockinfile :
+command :
+script :
+shell : 
+template :
+win_command :
+win_copy :
+win_file :
