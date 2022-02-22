@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  tasks:
+      - name: create a host_file
+        file:
+            dest: /etc/ansible/hosts_file
+            state: touch
+
+      - name: Add entry in hosts
+        blockinfile:
+           dest: /etc/ansible/hosts_file
+           block: |
+              [localhost]
+
+
+# output 
+
+# BEGIN ANSIBLE MANAGED BLOCK
+[localhost]
+# END ANSIBLE MANAGED BLOCK
