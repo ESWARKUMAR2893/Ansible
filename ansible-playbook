@@ -1,0 +1,5 @@
+
+# running a host file / inventory file named hosts using -i option
+ansible-playbook -i hosts playbook.yml
+
+
