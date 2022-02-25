@@ -2,4 +2,9 @@
 # running a host file / inventory file named hosts using -i option
 ansible-playbook -i hosts playbook.yml
 
+# to list hosts inside inventory file
+ansible all -i inventory --list-hosts
+
+#to list it as a graph
+ansible-inventory all -i inventory --graph 
 
