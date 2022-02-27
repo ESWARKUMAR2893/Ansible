@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  pre_tasks:
+          - name: pre tasks
+            debug:
+               msg: "this is pre tasks where we install packages which are needed in tasks like installing python , git ,nodejs etc "
+
+  tasks:
+          - name: this is tasks
+            debug:
+                msg: "this is tasks"
+
+  post_tasks:
+          - name: this is post tasks
+            debug:
+                msg: "post tasks.. in this we send mails or set slack message etc"
+
+
