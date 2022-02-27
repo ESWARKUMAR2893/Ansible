@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks:
+      - name: exception handeling ...
+        block:
+            - debug:
+                    msg: 'Jus a message ...'
+            - shell: "cat /etc/*elease"
+        rescue:
+            - debug:
+                   msg: 'when exception happend...'
+        always:
+            - debug:
+                 msg:  "displays always ..."
