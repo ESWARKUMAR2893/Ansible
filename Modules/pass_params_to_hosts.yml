@@ -1,0 +1,9 @@
+---
+- hosts: '{{host_pass}}'
+  tasks:
+       - name: debug value
+         debug:
+             msg: "this is just a message {{variable_pass}} "
+
+
+# ansible-playbook pass_params_to_hosts.yml -e host_pass=localhost --extra-vars variable_pass=eswar
