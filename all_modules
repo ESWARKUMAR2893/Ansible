@@ -27,3 +27,4 @@ template :
 win_command :
 win_copy :
 win_file :
+testing
